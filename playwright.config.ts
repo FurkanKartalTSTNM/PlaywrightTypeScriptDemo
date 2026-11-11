@@ -19,13 +19,12 @@ export default defineConfig({
       outputFile: `${reportRoot}/junit.xml`,
       includeProjectInTestName: true,
       stripANSIControlSequences: true
-    }],
-    ['blob', { outputDir: `${reportRoot}/blob-report` }]
+    }]
   ],
   use: {
-    trace: 'retain-on-failure',
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure'
+    trace: 'on',
+    screenshot: 'on',
+    video: 'on'
   },
   projects: [
     {
