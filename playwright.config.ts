@@ -14,7 +14,7 @@ export default defineConfig({
   outputDir: `${reportRoot}/artifacts`,
   reporter: [
     ['line'],
-      ['json'],
+    ['json'],
     ['html', { open: 'never', outputFolder: htmlReportDir }],
     ['junit', {
       outputFile: `${reportRoot}/junit.xml`,
